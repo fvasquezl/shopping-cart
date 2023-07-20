@@ -2,6 +2,7 @@
 
 import Imagen from "@/app/components/Imagen"
 import { comprar } from "@/store/miSlice"
+import Link from "next/link"
 import { useDispatch } from "react-redux"
 
 const FichaIndividual = ({ datos }) => {
@@ -27,6 +28,7 @@ const FichaIndividual = ({ datos }) => {
             </div>
             <div>
                 <button onClick={() => adquirir(datos)}>Comprar</button>
+                <Link href="/productos"><button>Volver</button></Link>
             </div>
 
         </>

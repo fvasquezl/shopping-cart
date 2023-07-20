@@ -8,13 +8,14 @@ export const origenSlice = createSlice({
     },
     reducers: {
         guardarCategoria: (state, action) => {
-
+            state.categoria = action.payload;
         },
         comprar: (state, action) => {
             state.miCarrito = [...state.miCarrito, action.payload]
         },
         devolver: (state, action) => {
-
+            state.miCarrito = state.miCarrito.filter(objeto =>
+                objeto.producto !== action.payload)
         }
     }
 

@@ -36,7 +36,9 @@
     ".next/types/**/*.ts",
     "app/productos/page.jsx",
     "app/productos/[id]/page.jsx",
-    "app/carrito/Carrito.jsx"
+    "app/carrito/Carrito.jsx",
+    "app/categorias/page.jsx",
+    "app/portipo/page.jsx"
   ],
   "exclude": [
     "node_modules"
